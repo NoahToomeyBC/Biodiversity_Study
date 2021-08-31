@@ -7,24 +7,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-
   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand mx-auto" >Select Subject ID No.</a>
+      <select id="selDataset" class="mx-auto" style="width: 200px;" onchange="optionChanged(this.value)"></select>
+    </nav>
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <!-- image retrieved from https://pixabay.com/illustrations/learning-hint-school-subject-3245793/ -->
+      <div class="col-md-12 jumbotron text-center" style="background: url(images/bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: 100% 100%;">
+        <h1 class= "text-success">Belly Button Biodiversity Dashboard</h1>
+        <p class= "text-success">Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <!-- <select id="selDataset"></select> -->
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
